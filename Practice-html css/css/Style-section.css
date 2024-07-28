@@ -1,0 +1,44 @@
+*{
+    margin: 0px; margin-left: 0px; margin-right: 0px;
+    box-sizing: border-box;
+    
+}
+header{
+    width: 1600px;
+    height: 100px;
+    background-color: chartreuse;
+    padding: 10px;
+}
+
+.new{
+    width: 200px;
+    height: 510px ;
+    background-color: chartreuse;
+    margin-top: 10px;            
+    padding: 10px;
+    float: left;
+}
+.new1{
+    width: 1170px;
+    height: 300px ;
+    background-color: chartreuse;
+    margin-top: 10px;
+    margin-left: 10px;           
+    padding: 10px;
+    }
+section{
+    width: 1170px;
+    height: 200px ;
+    background-color: chartreuse;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+footer{
+    width: 1600px;
+    height: 100px;
+    background-color: chartreuse;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
