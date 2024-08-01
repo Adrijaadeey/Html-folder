@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Adjacent sibling selctor */ 
+       main+section{       
+            background-color: aquamarine;
+       }
+       /* Chlid selector */
+       div>p{
+        background-color: darksalmon;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       /* nth-chlid selector */
+       table:nth-child(3){
+       font-family: Georgia, 'Times New Roman', Times, serif;
+
+       }
+        tr:nth-child(1) td:nth-child(2n+1),
+        tr:nth-child(3) td:nth-child(2n+1),
+        tr:nth-child(5) td:nth-child(2n+1),
+        tr:nth-child(7) td:nth-child(2n+1){
+        background-color: antiquewhite;
+       }
+        tr:nth-child(2) td:nth-child(2n),
+        tr:nth-child(4) td:nth-child(2n),
+        tr:nth-child(6) td:nth-child(2n)
+       {
+        background-color:rgb(223, 209, 209);
+       }
+       /* Example-2 */
+       table:nth-child(4){
+        margin-top: 10px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+
+       }
+       table:nth-child(4) tr:nth-child(1) td:nth-child(2n+1),
+       table:nth-child(4) tr:nth-child(3) td:nth-child(2n+1),
+       table:nth-child(4) tr:nth-child(5) td:nth-child(2n+1),
+       table:nth-child(4) tr:nth-child(7) td:nth-child(2n+1){
+        background-color: rgb(217, 250, 215);
+        font-style: oblique;
+       }
+       table:nth-child(4)  tr:nth-child(2) td:nth-child(2n),
+       table:nth-child(4) tr:nth-child(4) td:nth-child(2n),
+       table:nth-child(4) tr:nth-child(6) td:nth-child(2n)
+       {
+        background-color:rgb(194, 203, 232);
+        font-style: inherit;
+       }
+
+       /* Descendant selector */
+       h5 p ,address h6{
+        background-color: rgb(166, 14, 14);color: aliceblue;
+        font-family: cursive;
+        display: inline-block;
+       }
+       /* General sibling selctor */
+
+       article~p{
+        background-color: darkkhaki;
+        font-style: italic;
+        display: inline-block;
+    }
+
+    pre::after{
+        content: "Rainy";
+        color: blue;
+        font-size: medium;
+    }
+    h2:first-child{
+        background-color: coral;color: cornsilk;
+        }
+
+    .new::first-line{
+        font-weight: bold;
+        color: crimson;
+        
+
+    }
+      
+
+    </style>
+</head>
+<body>
+    <h2>This h2 is the first child of body</h2>
+    <div>
+        <strong>This p is the first child of div</strong>
+        <h2>This h2 is not the first child of div</h2>
+    </div>
+    <div>
+        <h2>This h2 is the first child of the second div</h2>
+        <em>This p is not the first child of the second div</em>
+    </div>
+       <!-- !-- 1.Adjacent sibling selctor --> 
+    <main>A beautiful day</main>
+    <section>Sunset
+        <p>Sunrise</p>
+        <section>Sunset</section>
+    </section>    
+    <section>Sunset</section>
+        <!-- 2.Chlid selector -->
+     <div> A girl
+        <p> A wonderful picture</p>
+        <p> A baby boy</p>
+     </div>
+     <span>
+        <p>A town</p>
+     </span>
+         <!-- 3.nth-chlid selector -->
+     <div>
+        <p>INDIA</p>
+        <span>India</span>
+        <table border="1px" cellspacing="0" cellpadding="6px" width="300px">
+                   
+                    <tr align="center">
+                        <td>Sun</td>
+                        <td>Mon</td>
+                        <td>Tue</td>
+                        <td>Wed</td>
+                        <td>Thu</td>
+                        <td>Fri</td>
+                        <td>Sat</td>
+                    </tr>
+                    <tr align="center">
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr align="center">
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr align="center">
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr align="center">
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr align="center">
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr height="30px">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="1px" cellspacing="0" cellpadding="6px" width="300px">
+                   
+                    <tr align="center">
+                        <td>Sun</td>
+                        <td>Mon</td>
+                        <td>Tue</td>
+                        <td>Wed</td>
+                        <td>Thu</td>
+                        <td>Fri</td>
+                        <td>Sat</td>
+                    </tr>
+                    <tr align="center">
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr align="center">
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr align="center">
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr align="center">
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr align="center">
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr height="30px">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>          
+     </div>
+      <!-- Descendant selector -->
+     <h5>
+        <p>
+            Rain has a way of bringing out the poetry in life
+        </p>
+        <address>Rain has a way of bringing out the poetry in life
+            <h6>Rain has a way of bringing out the poetry in life</h6>
+        </address>
+        <p>Rain has a way of bringing out the poetry in life</p>
+     </h5>
+      <!-- General sibling selctor   -->
+     <article>
+       <p>Rain showers my spirit and waters my soul</p>
+       <p>Rain showers my spirit and waters my soul</p>
+       <p>Rain showers my spirit and waters my soul</p>
+       <h3>
+        <p> /* General sibling selctor */</p>
+       </h3>
+     </article>
+     <p> /* General sibling selctor */</p>
+
+     <!-- Pseduo selector , pseduo class-->
+      <pre>
+        <p>The sound of rain needs no translation.</p>
+        <a>The sound of rain needs no translation.</a>
+      </pre>
+
+      <h2>
+        <div> The sound of rain needs no translation.</div>
+        <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam similique odio accusantium ex amet nobis quaerat sed maiores vero sunt labore quisquam earum at, consequuntur a quas. Ducimus, nam!</div>
+      </h2>
+     
+    <div class="new">"Let the rain kiss you. Let the rain beat upon your head with silver liquid drops. Let the rain sing you a lullaby." - Langston Hughes
+        "Rain showers my spirit and waters my soul."</div>
+     
+
+
+</body>
+</html>
