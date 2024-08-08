@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* Descendant selector */
+       h5 p ,address h6{
+        background-color: rgb(166, 14, 14);color: aliceblue;
+        font-family: cursive;
+        display: inline-block;
+       }
+       /* General sibling selctor */
+
+       article~p{
+        background-color: darkkhaki;
+        font-style: italic;
+        display: inline-block;
+    }
+
+    pre::after{
+        content: "Rain can erode soil and rocks, shaping landscapes over time.";
+        color: blue;
+        font-size: medium;
+    }
+    h2:first-child{
+        background-color: coral;color: cornsilk;
+        }
+
+    .new::first-line{
+        font-weight: bold;
+        color: crimson;
+    }
+</style>   
+  
+</head>
+<body>
+
+    <!-- First-child -->
+
+    <h2>This h2 is the first child of body</h2>
+    <div>
+        <strong>This p is the first child of div</strong>
+        <h2>This h2 is not the first child of div</h2>
+    </div>
+    <div>
+        <h2>This h2 is the first child of the second div</h2>
+        <em>This p is not the first child of the second div</em>
+    </div>
+      
+      <!-- Descendant selector -->
+     <h5>
+        <p>
+            Rain can fall as drizzle, showers, or heavy downpours.
+        </p>
+        <address>Rainwater infiltrates the ground, replenishing aquifers
+            <h6>Rain helps to regulate the Earth's temperature.</h6>
+        </address>
+        <p>The water cycle includes evaporation, condensation, and precipitation.</p>
+     </h5>
+      <!-- General sibling selctor   -->
+     <article>
+       <p>Rain showers my spirit and waters my soul</p>
+       <p>Rain showers my spirit and waters my soul</p>
+       <p>Rain showers my spirit and waters my soul</p>
+       <h3>
+        <p> Stratus clouds cover the sky like a blanket and often bring light rain.</p>
+       </h3>
+     </article>
+     <p> Rainwater infiltrates the ground, replenishing aquifers.</p>
+
+     <!-- Pseduo selector , pseduo class-->
+      <pre>
+        <p>The sound of rain needs no translation.</p>
+        <a>Monsoon seasons bring prolonged periods of heavy rain.</a>
+      </pre>
+
+      <h2>
+        <div>Cirrus clouds are high and wispy, usually indicating fair weather</div>
+        <div>Nimbus clouds are dark and bring continuous rain.</div>
+      </h2>
+     
+    <div class="new">Hail forms in strong thunderstorms with intense updrafts.
+        Rain can erode soil and rocks, shaping landscapes over time.</div>
+     
+
+
+</body>
+</html>

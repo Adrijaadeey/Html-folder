@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+/* Adjacent sibling selctor */ 
+main+section{       
+    background-color: aquamarine;
+}
+/* Chlid selector */
+div>p{
+background-color: darksalmon;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* nth-chlid selector */
+table:nth-child(3){
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+tr:nth-child(1) td:nth-child(2n+1),
+tr:nth-child(3) td:nth-child(2n+1),
+tr:nth-child(5) td:nth-child(2n+1),
+tr:nth-child(7) td:nth-child(2n+1){
+background-color: antiquewhite;
+}
+tr:nth-child(2) td:nth-child(2n),
+tr:nth-child(4) td:nth-child(2n),
+tr:nth-child(6) td:nth-child(2n)
+{
+background-color:rgb(223, 209, 209);
+}
+/* Example-2 */
+table:nth-child(4){
+margin-top: 10px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+table:nth-child(4) tr:nth-child(1) td:nth-child(2n+1),
+table:nth-child(4) tr:nth-child(3) td:nth-child(2n+1),
+table:nth-child(4) tr:nth-child(5) td:nth-child(2n+1),
+table:nth-child(4) tr:nth-child(7) td:nth-child(2n+1){
+background-color: rgb(217, 250, 215);
+font-style: oblique;
+}
+table:nth-child(4)  tr:nth-child(2) td:nth-child(2n),
+table:nth-child(4) tr:nth-child(4) td:nth-child(2n),
+table:nth-child(4) tr:nth-child(6) td:nth-child(2n)
+{
+background-color:rgb(194, 203, 232);
+font-style: inherit;
+}
+</style>
+</head>
+<body>
+         <!-- !-- 1.Adjacent sibling selctor --> 
+    <main>Rain is a natural phenomenon resulting from the condensation of water vapor in the atmosphere. </main>
+    <section>Clouds, which are formed by tiny water droplets or ice crystals suspended in the air, are a crucial part of this process.
+        <p>When the air becomes saturated with moisture, these droplets or crystals collide and merge, growing larger and heavier.</p>
+        <section> Eventually, they fall to the ground as precipitation in the form of rain. </section>
+    </section>    
+    <section> Rain is essential for replenishing water sources, supporting plant life, and maintaining the Earth's ecosystems.</section>
+        <!-- 2.Chlid selector -->
+     <div> Rainfall is essential for plants and water sources.
+        <p>Clouds are collections of tiny water droplets or ice crystals</p>
+        <p>Weather patterns can be predicted by studying clouds and rain.</p>
+     </div>
+     <span>
+        <p>When clouds become saturated, they release rain</p>
+     </span>
+         <!-- 3.nth-chlid selector -->
+     <div>
+        <p>INDIA</p>
+        <span>America</span>
+        <table border="1px" cellspacing="0" cellpadding="6px" width="300px">
+                   
+                    <tr align="center">
+                        <td>Sun</td>
+                        <td>Mon</td>
+                        <td>Tue</td>
+                        <td>Wed</td>
+                        <td>Thu</td>
+                        <td>Fri</td>
+                        <td>Sat</td>
+                    </tr>
+                    <tr align="center">
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr align="center">
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr align="center">
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr align="center">
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr align="center">
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr height="30px">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="1px" cellspacing="0" cellpadding="6px" width="300px">
+                   
+                    <tr align="center">
+                        <td>Sun</td>
+                        <td>Mon</td>
+                        <td>Tue</td>
+                        <td>Wed</td>
+                        <td>Thu</td>
+                        <td>Fri</td>
+                        <td>Sat</td>
+                    </tr>
+                    <tr align="center">
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr align="center">
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr align="center">
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr align="center">
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr align="center">
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr height="30px">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>          
+     </div>
+</body>
+</html>
