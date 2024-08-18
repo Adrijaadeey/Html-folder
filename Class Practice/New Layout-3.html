@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 0px auto;
+            width: 80%; 
+            height: 80vh;
+            border: 1px solid black;
+            padding: 20px;
+            background-color: white;
+            display: flex; flex-direction: column; flex-wrap: wrap;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; color: white; font-size:large;text-align: center;
+        }
+        .h{
+            height: 20%;
+            background-color: #00BFFF;
+            align-content: center;
+        }
+        .mid1{
+            height: 40%;
+            display: flex;
+            line-height: 80px; 
+        }
+        .l{
+            width: 25%;
+            background-color:#FF4500 ;
+        }
+        .m{
+            width: 50%;
+            background-color:#32CD32 ;
+        }
+        .r{
+            width: 25%;
+            background-color: #FFD700;
+        }
+        .mid2{
+            height: 40%;
+            display: flex; gap: 10px;
+            background-color: #800080; padding: 40px;
+        }
+        .f1,.f2,.f3,.f4{
+            width: 25%;
+            background-color: #FF7F50;
+            align-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="h">Header</div>
+        <div class="mid1">
+            <div class="l">Left sidebar</div>
+            <div class="m">Main content</div>
+            <div class="r">Right sidebar</div>
+        </div>
+        <div class="mid2">
+            <div class="f1">Footer 1</div>
+            <div class="f2">Footer 2</div>
+            <div class="f3">Footer 3</div>
+            <div class="f4">Footer 4</div>
+        </div>
+       
+    </div>
+</body>
+</html>

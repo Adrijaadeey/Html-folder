@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --red:#FF4F43;
+            --cyan:#38C0CA;
+            --beige:#D1A96A;
+            --white:#FFFFFF;
+            --gap:20px;
+        }
+        .container{
+            margin: 0px auto;
+            width: 80%; height: 80vh;
+            display: flex; gap:var(--gap);
+            background-color: #3D3D3D;
+            border: 20px solid #3D3D3D;
+        }
+        .main1{
+            width: 20%;
+            display: flex; flex-direction: column; gap:var(--gap);
+        }
+        .m1{height: 50%; background-color: var(--red);
+        }
+        .m2{height: 50%; background-color: var(--white);
+        }
+        .main2{
+            width:80%; display: flex;flex-direction: column;gap:var(--gap);
+        }
+        .heading{
+            display: flex;gap:var(--gap);
+            height: 30%;
+        }
+        .h1{
+            width:50%;background-color: var(--cyan);
+        }
+        .h2{
+            width:50%;background-color: var(--beige);
+        }
+        .box{
+            width:100%; display: flex;height:70%;gap:var(--gap);
+        }
+        .mid1{
+            width:80%;display: flex; gap:var(--gap);flex-direction: column;gap:var(--gap);
+        }
+        .a{
+            width:100%;display: flex;height: 50%;gap:var(--gap);
+        }
+        .submid1{
+            width: 40%;background-color: var(--beige);
+        }
+        .submid2{
+            width:60%;background-color: var(--white); 
+        }
+        .b{
+            height: 50%;width:100%;display: flex;gap:var(--gap);
+        }
+        .submid3{
+            width:60%; background-color: var(--red);
+        }
+        .submid4{
+            width: 40%;background-color: var(--cyan); 
+        }
+        .mid2{
+            width:20%; background-color: var(--red) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main1">
+            <div class="m1"></div>
+            <div class="m2"></div>
+        </div>
+        <div class="main2">
+            <div class="heading">
+                <div class="h1"></div>
+                <div class="h2"></div>
+            </div>
+            <div class="box">
+                <div class="mid1">
+                    <div class="a">
+                        <div class="submid1"></div>
+                        <div class="submid2"></div>    
+                    </div>                
+                    <div class="b">
+                        <div class="submid3"></div>
+                        <div class="submid4"></div>   
+                     </div>            
+                </div>
+                <div class="mid2"></div>             
+            </div>         
+        </div>   
+    </div>
+</body>
+</html>

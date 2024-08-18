@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{box-sizing: border-box;}
+        .container{
+            margin: 0px auto;
+            width: 70%;
+            height: 80vh;
+            font-family: Arial, Helvetica, sans-serif; font-size: large; font-weight: bold;
+        }
+        .top{
+            height: 15%;
+            background-color: #3CB371;
+            text-align: center; line-height: 90px;
+        }
+        .subtop{
+            height: 5%;
+            background-color: #006400;
+            text-align: center;
+        }
+        .middle{
+            height: 65%;
+            display: flex; gap: 10px;
+        }
+        .left{
+            width:25%; display: flex;
+            flex-direction: column; gap: 10px;
+        }
+       .left div{
+        height: 33.3%; padding: 10px;
+       }
+       .l-1{background-color: #20B2AA;}
+       .l-2{background-color: #4682B4;}
+       .l-3{background-color: #1E90FF;}
+
+       .mid{
+        width: 50%;
+       }
+       .mid div{padding: 10px;}
+       .m-1{height:20%;
+        background-color: #FF7F50;
+        }
+        .mid div:nth-last-child(2),
+        .mid div:nth-last-child(4){
+            height: 15%; background-color: #FA8072;
+        }
+        .m-3{height: 20%; background-color: #F08080;
+        }
+        .m-5{height: 30%; background-color: #CD5C5C;
+        }
+        .right{
+            width:25%; display: flex; flex-direction: column; gap: 10px;
+        }
+        .mid1{
+            display: flex; gap:10px ; height: 60%;
+        }
+        .r-1{
+            width: 50%;
+            background-image: linear-gradient(to top,#FFFFE0,#FFEF00 ,#FFF44F,#FFFF31,#FFD700);
+           
+        }
+        .r-2{
+            width: 50%;background-color: #FFD700;
+        }
+        .r-3{
+            height: 40%; background-color: #FF8C00;
+        }
+        .bottom{
+            height: 8%;
+            text-align: center; padding: 30px;
+            background-color: #3CB371;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">Header</div>
+        <div class="subtop">Main Nav</div>
+        <div class="middle">
+            <div class="left">
+                <div class="l-1">Search</div>
+                <div class="l-2">Social Media</div>
+                <div class="l-3">News Letter Sign Up</div>
+            </div>
+            <div class="mid">
+                <div class="m-1">Banner</div>
+                <div class="m-2">Copy</div>
+                <div class="m-3">Products</div>
+                <div class="m-4">Copy</div>
+                <div class="m-5">Blog</div>
+            </div>
+            <div class="right">
+                <div class="mid1">
+                    <div class="r-1">Categories</div>
+                    <div class="r-2">Side Nav</div>
+                </div>
+                <div class="r-3">Other Offers</div>            
+            </div>
+        </div>
+        <div class="bottom">Footer</div>     
+    </div>
+</body>
+</html>
