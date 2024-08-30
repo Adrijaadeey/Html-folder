@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0px auto;
+            width:50%;height: 80vh;
+            display: grid; gap: 10px;
+            grid-template-columns: 100px 50px 50px 100px 100px 100px 100px;
+            grid-template-rows: repeat(4,1fr);
+            text-align: center; color: white;
+        }
+        .item1{
+            grid-column-start:1;
+            grid-column-end:3;
+            grid-row-start:1;
+            grid-row-end:3;
+            background-color:#256aba;
+            align-content: center;
+        }
+        .item2{
+            grid-column-start:3;
+            grid-column-end:5;
+            grid-row-start:1;
+            grid-row-end:3;
+            align-content: center;
+            background-color:#256aba;
+        }
+        .item3{
+            grid-column-start:1;
+            grid-column-end:5;
+            grid-row-start:3;
+            grid-row-end:4;
+            background-color:#256aba;
+        }
+        .item4{
+            grid-column-start:1;
+            grid-column-end:2;
+            grid-row-start:4;
+            grid-row-end:5;
+            align-content: center;
+            background-color:#154478;
+        }
+        .item5{
+            grid-column-start:2;
+            grid-column-end:4;
+            grid-row-start:4;
+            grid-row-end:5;
+            align-content: center;
+            background-color:#154478;
+        }
+        .item6{
+            grid-column-start:4;
+            grid-column-end:5;
+            grid-row-start:4;
+            grid-row-end:5;
+            align-content: center;
+            background-color:#154478;
+        }
+        .item7{
+            grid-column-start:5;
+            grid-column-end:8;
+            grid-row-start:1;
+            grid-row-end:2;
+            align-content: center;
+            background-color:#256aba;
+        }
+        .item8{
+            grid-column-start:5;
+            grid-column-end:6;
+            grid-row-start:2;
+            grid-row-end:3;
+            align-content: center;
+            background-color:#154478;
+        }
+        .item9{
+            grid-column-start:6;
+            grid-column-end:7;
+            grid-row-start:2;
+            grid-row-end:3;
+            align-content: center;
+            background-color:#154478;
+        }
+        .item10{
+            grid-column-start:7;
+            grid-column-end:8;
+            grid-row-start:2;
+            grid-row-end:3;
+            align-content: center;
+            background-color:#154478;
+        }
+        .item11{
+            grid-column-start:5;
+            grid-column-end:8;
+            grid-row-start:3;
+            grid-row-end:5;
+            align-content: center;
+            background-color:#256aba;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Home</div>
+        <div class="item2">About</div>
+        <div class="item3">Kababs</div>
+        <div class="item4">Shishkababs</div>
+        <div class="item5">BBQ kababs</div>
+        <div class="item6">Summer kababs</div>
+        <div class="item7">Widgets</div>
+        <div class="item8">Big Widgets</div>
+        <div class="item9">Big Widgets</div>
+        <div class="item10">Big Widgets</div>
+        <div class="item11">Contact</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 0px auto;
+            width: 85%;height:90vh;
+            font-family:Arial, Helvetica, sans-serif;
+            display: flex;align-items: center; gap:10px;
+            background-image: linear-gradient(to left,#8188d9,#90dae5);
+            padding:80px;
+        }
+        .mid1,.mid2,.mid3{
+            width: 33.3%;
+            height:100%;
+            background-color: white;
+            border-radius:20px;
+        }
+        img{
+            width: 100%; height: 40%;object-fit: cover;
+            border-top-left-radius: 20px; border-top-right-radius: 20px;
+        }
+        span:nth-child(4){
+            background-image: linear-gradient(to bottom,#3190ef, #6dc6f2);
+            color: white;
+            border-radius: 15px;
+            padding:4px;
+        }
+        h2,p,span{
+            margin-left: 8px;
+        }
+         .new{
+            display: flex; gap: 8px;
+         }
+         span{
+            font-size: small;
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mid1">
+            <img src="Images/Man.jpg">
+            <br><br>
+            <span>&nbsp;Technology&nbsp;</span>
+            <h2>What’s New In 2022 Tech</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+            <br><br>
+            <div class="new">
+            <img src="Images/girl.jpg" style="width: 50px;height: 50px;border-radius: 50%;margin-left: 8px;">
+            <div style="margin-top: 2vh;">
+            <span style="display: block;"><b>Jane Doe</b></span>
+            <span  style="display: block;">2h ago</span></div>
+        </div>
+        </div>
+       
+        <div class="mid2">
+            <img src="Images/food img.jpg">
+            <br><br>
+            <span style=" background-image: linear-gradient(to bottom,#f5c686, #d79d4d);">&nbsp;Food&nbsp;</span>
+            <h2>Delicious Food</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+            <br><br>
+            <div class="new">
+            <img src="Images/little boy.jpg" style="width: 50px;height: 50px;border-radius: 50%;margin-left: 8px;">
+            <div style="margin-top: 2vh;">
+            <span style="display: block;"><b>Jony Doe</b></span>
+            <span  style="display: block;">Yesterday</span></div>
+        </div> 
+        </div>
+        <div class="mid3">
+            <img src="Images/adven.webp">
+            <br><br>
+            <span style="background-image: linear-gradient(to bottom,#fac4c3, #cd323d)">&nbsp;Automobile&nbsp;</span>
+            <h2>Race To Your Heart Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+            <br><br>
+            <div class="new">
+            <img src="Images/boy.jpg" style="width: 50px;height: 50px;border-radius: 50%;margin-left: 8px;">
+            <div style="margin-top: 2vh;">
+            <span style="display: block;"><b>John Doe</b></span>
+            <span  style="display: block;">2d ago</span></div>
+        </div> 
+        </div>
+    </div>
+</body>
+</html>
