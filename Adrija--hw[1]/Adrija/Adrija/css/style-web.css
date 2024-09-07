@@ -18,7 +18,7 @@
 }
 
 .top1 {
-  width: 57%;
+  width: 60%;
 }
 
 .top1 h1 {
@@ -110,7 +110,7 @@ nav {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.section2 .container{
+.section2 .container {
   width: 100%;
   padding: 0;
 }
@@ -122,7 +122,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
 }
 
 .about-text {
@@ -206,10 +205,10 @@ h2 {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-padding-left: 15px;  
+  padding-left: 15px;
 }
 .mid2 {
-  padding-right: 15px;  
+  padding-right: 15px;
   width: 50%;
   margin-top: 20px;
 }
@@ -233,11 +232,101 @@ textarea {
   border-radius: 4px;
 }
 @media screen and (max-width: 1200px) {
+  .about-img img {
+    width: 80%;
+  }
+  .about-text h1 {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 800px) {
+  .top1 {
+    width: 50%;
+  }
+  .top3 {
+    width: 25%;
+  }
+  .top2 {
+    width: 25%;
+  }
+  .about-img img {
+    width: 80%;
+  }
+  .about-text h1 {
+    font-size: 30px;
+  }
 }
-
+@media screen and (max-width: 764px) {
+  .section4 .sec1:nth-child(3) h2,
+  .section4 .sec1:nth-child(1) h2 {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 692px) {
+  .section1 h3 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .section1 h3 {
+    font-size: 30px;
+  }
+  .about-text h1 {
+    font-size: 25px;
+  }
+  .section3 h4 {
+    font-size: 20px;
+  }
+  .section5 p {
+    font-size: small;
+  }
+}
 @media screen and (max-width: 600px) {
+  nav:first-of-type .row {
+    flex-direction: column;
+  }
+  nav:first-of-type .top1,
+  nav:first-of-type .top2,
+  nav:first-of-type .top3 {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .sec1 h2{
+    font-size: 25px;
+  }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width:545px) {
+  .section1 h3 {
+    font-size:25px;
+  }
+  .p1, .section2 p{
+    font-size: small;
+    margin-top: 5px;
+  }
+  .submid, .mid1 p{
+    font-size: small;
+  }
+  .mid1 h3{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:458px) {
+  .submid{
+    font-size: x-small;
+  }
+}
+@media screen and (max-width:400px) {
+  .sec button {    
+    padding:5px 5px;
+  }
+}
+@media screen and (max-width:368px) {
+  .section4{
+    height:650px;
+  } 
+  .section1 h3{
+    font-size: 20px;
+    width: 130px;
+  }
 }
