@@ -1,0 +1,52 @@
+/* header section */
+.col-6:last-child {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--bs-dark-border-subtle);
+}
+.col-6 {
+  background-color: var(--bs-dark-border-subtle);
+}
+.fs-h {
+  font-size: 10rem;
+}
+/* hero section */
+.p-4 {
+  background-color: var(--bs-success-border-subtle);
+}
+.col-3:last-child .p-4 {
+  background-color: var(--bs-dark-border-subtle);
+}
+/* Travel Together Section */
+.my-3 {
+  background-image: url(../images/bike.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+.my-3 h1 {
+  top: 580px;
+  position: absolute;
+  right: 20%;
+  left: 20%;
+  bottom:0 ;
+}
+/* Card Section */
+.col-4{
+    background-color: var(--bs-dark-border-subtle); 
+   
+}
+.col-4:nth-child(2){
+    background-color: var(--bs-success-border-subtle);
+}
+.container:nth-child(4) .row{
+    gap: 15px;
+    width:100%;
+}
+.col-4{
+    width: 32.55%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
