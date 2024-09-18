@@ -142,7 +142,7 @@ i {
   align-items: center;
   justify-content: center;
 }
-.subscribe input[type="email"] {
+.subscribe input[type="email"]{
   padding: 10px;
   font-size: 14px;
   border: 1px solid #ccc;
