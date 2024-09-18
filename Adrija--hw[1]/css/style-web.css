@@ -5,8 +5,11 @@
   padding: 0px;
   font-family: "SUSE", sans-serif;
   box-sizing: border-box;
+  
 }
-
+body{
+  background-color: #ea663e;
+}
 .container {
   width: 100%;
   padding: 0 15px 0 15px;
@@ -69,8 +72,8 @@
   top: 0px;
   left: 0px;
   bottom: 0px;
-  right: 0px;
-  border: 1px solid red;
+  /* right: 0px;
+  border: 1px solid red; */
   }
 
 .sec {
@@ -333,6 +336,10 @@ textarea {
     flex-direction: column;
     gap: 10px;
   }
+  .section1 .container {
+    width:100%;
+    padding: 0;
+  }
   nav:first-of-type .top1,
   nav:first-of-type .top2,
   nav:first-of-type .top3 {
@@ -382,6 +389,10 @@ textarea {
 @media screen and (max-width: 545px) {
   .section1 h3 {
     font-size: 25px;
+  }  
+  .section1 .section5 .section3 .container {
+    width:100%;
+    padding: 0;
   }
   .p1,
   .section2 p {
