@@ -266,7 +266,7 @@ textarea {
     width: 50%;
   }
   .top3 {
-    width: 25%;
+    width: 23%;
   }
   .top2 {
     width: 25%;
@@ -454,11 +454,17 @@ textarea {
   }
 }
 @media screen and (max-width: 368px) {
-  .section4 {
+  /* .section4 {
     height: 650px;
-  }
+  } */
   .section1 h3 {
     font-size: 20px;
     width: 130px;
   }
 }
+@media screen and (max-width: 350px) {
+  /* .section4 {
+    height: 700px;
+  } */
+}
+
